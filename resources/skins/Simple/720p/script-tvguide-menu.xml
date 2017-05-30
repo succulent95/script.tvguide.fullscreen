@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+  <allowoverlay>no</allowoverlay>
+  <defaultcontrol always="false">4000</defaultcontrol>
+  <coordinates>
+    <system>1</system>
+    <left>0</left>
+    <top>0</top>
+   </coordinates>
+   <controls>
+      <!-- Background -->
+      <control type="image">
+        <description>Background</description>
+      <left>0</left>
+      <top>0</top>
+      <width>1280</width>
+      <height>720</height>
+        <aspectratio>scale</aspectratio>
+      <texture fallback="special://profile/addon_data/script.tvguide.fullscreen/backgrounds/charcoal.png">$VAR[GlobalFanartVar]</texture>
+      <visible>true</visible>
+    </control>
+    <!-- Header Image -->
+      <control type="image">
+        <description>Header</description>
+      <left>0</left>
+      <top>0</top>
+      <width>1280</width>
+      <height>58</height>
+      <texture>black-back.png</texture>
+      <visible>true</visible>
+    </control>
+        <control type="image">
+      <description>Header Trim</image>
+      <left>0</left>
+      <top>0</top>
+      <width>1280</width>
+      <height>1</height>
+      <texture>aqua.png</texture>
+        <visible>true</visible>
+      </control>
+        <control type="image">
+          <decription>Footer Trim</description>
+          <left>642</left>
+          <top>560</top>
+          <width>1280</width>
+          <height>1</height>
+          <texture>aqua.png</texture>
+          <visible>true</visible>
+        </control>
+        
+          <!-- Video Preview -->
+          <control type="group">
+            <left>0</left>
+            <top>358</top>
+            <width>642</width>
+            <height>362</height>
+            <control type="image">
+              <description>Current/Preview background</description>
+              <left>0</left>
+              <top>0</top>
+              <width>642</width>
+              <height>362</height>
+              <texture>black.png</texture>
+              <bordersize>1</bordersize>
+              <bordertexture>aqua.png</bordertexture>
+              <visible>true</visible>
+            </control>
+            <control type="image">
+              <description>Current/Preview backup</description>
+              <left>1</left>
+              <top>1</top>
+              <width>640</width>
